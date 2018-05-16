@@ -115,6 +115,12 @@ Alternatively, your submission could consist of only the **GitHub link** to your
 |:---------------------:|:---------------------------------------------------------:| 
 |  The result of slam should be a list of robot and landmark positions, `mu`. |  The values in `mu` will be the x, y positions of the robot over time and the estimated locations of landmarks in the world. `mu` is calculated with the constraint matrices `omega^(-1)*xi`. |
 
+
+#### Answer question about final pose
+| Criteria       		|     Meets Specifications	        			            | 
+|:---------------------:|:---------------------------------------------------------:| 
+|  Answer question about the final robot pose. |  Compare the `slam`-estimated and *true* final pose of the robot; answer why these values might be different. |
+
 #### `slam` passes all tests
 
 | Criteria       		|     Meets Specifications	        			            | 
