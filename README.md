@@ -85,9 +85,11 @@ Alternatively, your submission could consist of only the **GitHub link** to your
 ## Project Rubric
 
 ### `robot_class.py`: Implementation of `sense`
+
+#### Implement the `sense` function
 | Criteria       		|     Meets Specifications	        			            | 
 |:---------------------:|:---------------------------------------------------------:| 
-|  Implement the `sense` function for the robot class. |  Implement the `sense` function to complete the robot class found in the `robot_class.py` file. This implementation should account for a given amount of `measurement_noise` and the `meaurement_range` of the robot. This function should return a list of values that reflect the measured distance (dx, dy) between the robot's position and any landmarks it sees. One item in the list has the format: `[landmark_index, dx, dy]`. |
+|  Implement the `sense` function for the robot class. |  Implement the `sense` function to complete the robot class found in the `robot_class.py` file. This implementation should account for a given amount of `measurement_noise` and the `measurement_range` of the robot. This function should return a list of values that reflect the measured distance (dx, dy) between the robot's position and any landmarks it sees. One item in the list has the format: `[landmark_index, dx, dy]`. |
 
 
 ### Notebook 3: Implementation of `initialize_constraints`
@@ -95,7 +97,7 @@ Alternatively, your submission could consist of only the **GitHub link** to your
 #### Initialize omega and xi matrices 
 | Criteria       		|     Meets Specifications	        			            | 
 |:---------------------:|:---------------------------------------------------------:| 
-|  Initialize constraint matrices. |  Initialize the array `omega` and vector `xi` such that any unknown values are `0` the size of these should vary with the given `world_size` and time step, `N`, parameters. |
+|  Initialize constraint matrices. |  Initialize the array `omega` and vector `xi` such that any unknown values are `0` the size of these should vary with the given `world_size`, `num_landmarks`, and time step, `N`, parameters. |
 
 
 ### Notebook 3: Implementation of `slam`
@@ -125,7 +127,7 @@ Alternatively, your submission could consist of only the **GitHub link** to your
 
 | Criteria       		|     Meets Specifications	        			            | 
 |:---------------------:|:---------------------------------------------------------:| 
-| Test your implementation of `slam`.  |  There are two provided test_data cases, test your mplementation of slam on them and see if the result matches. |
+| Test your implementation of `slam`.  |  There are two provided test_data cases, test your implementation of slam on them and see if the result matches.|
 
 
 LICENSE: This project is licensed under the terms of the MIT license.
