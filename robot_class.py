@@ -75,12 +75,15 @@ class robot:
             between the robot's position and said landmarks.
             This function should account for measurement_noise and measurement_range.
             One item in the returned list should be in the form: [landmark_index, dx, dy].
-            '''
-           
-        measurements = []
-        
+            '''           
+        #measurements = []        
         ## TODO: iterate through all of the landmarks in a world
-        
+        measurements = []
+        for k,lm in enumerate(self.landmarks):
+            dx = (lm[0] + self.rand() * self.measurement_noise) - self.x 
+            dy = (lm[1] + self.rand() * self.measurement_noise) - self.y
+            if dx < self.measurement_range and dx < self.measurement_range:
+                measurements.append([k,dx,dy])
         ## TODO: For each landmark
         ## 1. compute dx and dy, the distances between the robot and the landmark
         ## 2. account for measurement noise by *adding* a noise component to dx and dy
